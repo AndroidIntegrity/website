@@ -1,0 +1,7 @@
+The "Android" name, the Android logo, the "Google Play" brand,
+and other Google trademarks, are property of Google LLC and not
+part of the assets available through the Android Open Source
+Project.
+
+Using img/android.png
+https://developer.android.com/static/images/brand/android-head_3D.png
