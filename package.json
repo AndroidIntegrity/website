@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/output.css",
+    "start": "node index.js",
+    "dev": "npm run build && npm run start",
+    "test": "npm run build && npm run start"
   },
   "private": true,
   "dependencies": {
