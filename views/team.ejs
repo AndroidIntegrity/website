@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link href="/css/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-slate-950 text-gray-100">
-  <header class="p-4 bg-gradient-to-r from-slate-700 to-slate-900 text-white flex justify-between items-center px-1 sm:px-2 md:px-4 lg:px-8">
-    <a href="/" class="text-xl hover:text-slate-300 transition duration-300 ease-in-out">Android Integrity Alliance</a>
-    <nav class="flex space-x-4">
-      <a href="/team" class="p-2 hover:text-slate-300 transition duration-300 ease-in-out">
-        <i class="fas fa-users pr-1"></i> Our Team
-      </a>
-      <a href="/contact" class="p-2 hover:text-slate-300 transition duration-300 ease-in-out">
-        <i class="fas fa-envelope pr-1"></i> Contact
-      </a>
-      <a href="/petition" class="py-2 px-6 bg-gradient-to-r from-slate-700 to-slate-800 rounded hover:text-slate-300 transition duration-300 ease-in-out">
-        <i class="fas fa-pen pr-1"></i> Petition
-      </a>
-    </nav>
-  </header>
-  <main class="p-8">
-    <section class="text-center">
-      <h1 class="text-4xl font-bold mb-8">The AIA Team</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div class="flex flex-col items-center">
-          <img src="/img/profiles/alpha.webp" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
-          <h2 class="text-xl font-semibold">Alessandro Murru</h2>
-          <p class="text-gray-400">Founder</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="/img/profiles/aidan.jpeg" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
-          <h2 class="text-xl font-semibold">Aidan Honor</h2>
-          <p class="text-gray-400">SysAdmin</p>
-        </div>
-        <div class="flex flex-col items-center">
-            <img src="/img/profiles/lucas.png" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
-            <h2 class="text-xl font-semibold">Lucas Gabriel<br>Machado de Silva</h2>
-            <p class="text-gray-400">Developer</p>
-        </div>
-        <div class="flex flex-col items-center">
-            <img src="/img/profiles/blade0.webp" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
-            <h2 class="text-xl font-semibold">Blade0</h2>
-            <p class="text-gray-400">Designer</p>
-        </div>
-      </div>
-    </section>
-  </main>
+    <header class="p-4 bg-gradient-to-r from-slate-700 to-slate-900 text-white flex flex-col sm:flex-row justify-between items-center px-2 sm:px-4 md:px-8 lg:px-16">
+        <a href="/" class="text-xl sm:text-2xl hover:text-slate-300 transition duration-300 ease-in-out">Android Integrity Alliance</a>
+        <nav class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0 justify-center sm:justify-start w-full sm:w-auto">
+          <a href="/team" class="text-center p-2 hover:text-slate-300 transition duration-300 ease-in-out">
+            <i class="fas fa-users pr-1"></i> Our Team
+          </a>
+          <a href="/contact" class="text-center p-2 hover:text-slate-300 transition duration-300 ease-in-out">
+            <i class="fas fa-envelope pr-1"></i> Contact
+          </a>
+          <a href="/petition" class="text-center py-2 px-4 bg-gradient-to-r from-slate-700 to-slate-800 rounded hover:text-slate-300 transition duration-300 ease-in-out">
+            <i class="fas fa-pen pr-1"></i> Petition
+          </a>
+        </nav>
+    </header>
+    <main class="p-8">
+        <section class="text-center">
+            <h1 class="text-4xl font-bold mb-8">The AIA Team</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <img src="/img/profiles/alpha.webp" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
+                    <h2 class="text-xl font-semibold">Alessandro Murru</h2>
+                    <p class="text-gray-400">Founder</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/img/profiles/aidan.jpeg" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
+                    <h2 class="text-xl font-semibold">Aidan Honor</h2>
+                    <p class="text-gray-400">SysAdmin</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/img/profiles/lucas.png" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
+                    <h2 class="text-xl font-semibold">Lucas Gabriel<br>Machado de Silva</h2>
+                    <p class="text-gray-400">Developer</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/img/profiles/blade0.webp" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4">
+                    <h2 class="text-xl font-semibold">Blade0</h2>
+                    <p class="text-gray-400">Designer</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
