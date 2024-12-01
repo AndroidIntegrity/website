@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-slate-950 text-gray-100">
+    <%- include('shards/header') %>
+    <main class="p-4 sm:p-8">
+        <section class="flex flex-col items-center justify-center space-y-4 pt-8 sm:pt-16 pb-3 text-center">
+            <h1 class="text-4xl font-bold mb-8">About Us</h1>
+            <p class="text-base sm:text-lg md:text-xl text-center">We are the Android Integrity Alliance, a group of passionate individuals aiming to promote a fair and open Android operating system. Our mission is to support all types of users and ensure that everyone can enjoy the full potential of their device.</p>
+        </section>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pt-8 px-4 sm:px-8">
+            <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                <i class="fas fa-users text-blue-500 text-6xl mb-4"></i>
+                <h2 class="text-xl font-semibold">Our Team</h2>
+                <p class="text-gray-200 text-center">We are a small collective of people passionate about customizing our Android devices and using them to their full extent.</p>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                <i class="fas fa-shield-alt text-green-500 text-6xl mb-4"></i>
+                <h2 class="text-xl font-semibold">Our Mission</h2>
+                <p class="text-gray-200 text-center">Our goal is to rework the Play Integrity system to be inclusive of rooted devices, while maintaining and supporting security.</p>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                <i class="fas fa-handshake text-yellow-500 text-6xl mb-4"></i>
+                <h2 class="text-xl font-semibold">Our Vision</h2>
+                <p class="text-gray-200 text-center">We aim to be a trusted third party to vet custom ROMs, in order to assist Google in being inclusive, yet secure.</p>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                <i class="fas fa-bullhorn text-red-500 text-6xl mb-4"></i>
+                <h2 class="text-xl font-semibold">Get Involved</h2>
+                <p class="text-gray-200 text-center">Join us in our mission to promote a fair and open Android operating system. Sign our petition and follow us on social media.</p>
+            </div>
+        </section>
+    </main>
+<%- include('shards/footer') %>
