@@ -21,6 +21,10 @@ app.get('/contact', (req, res) => {
     res.render('contact', { title: 'Contact | Android Integrity Alliance' });
 });
 
+app.get('/about', (req, res) => {
+    res.render('about', { title: 'About | Android Integrity Alliance' });
+});
+
 app.get('/petition', (req, res) => {
     res.redirect('https://www.change.org/p/stop-google-from-limiting-custom-roms');
 });
