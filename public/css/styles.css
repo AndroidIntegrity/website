@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Parkinsans';
-    src: url("/font/Parkinsans.ttf") format("truetype");
+    src: url("/res/font/Parkinsans.ttf") format("truetype");
 }
 
 body {

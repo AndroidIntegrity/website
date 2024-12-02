@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const compression = require('compression');
+const expressStaticGzip = require('express-static-gzip');
 
 const app = express();
 const PORT = 3000;
@@ -7,7 +9,14 @@ const PORT = 3000;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(compression());
+app.use('/res', expressStaticGzip(path.join(__dirname, 'public'), {
+    enableBrotli: true,
+    orderPreference: ['br', 'gz'],
+    setHeaders: (res, path) => {
+        res.setHeader('Cache-Control', 'public, max-age=31536000');
+    }
+}));
 
 app.get('/', (req, res) => {
     res.render('index', { title: 'Android Integrity Alliance' });
