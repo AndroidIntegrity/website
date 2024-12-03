@@ -2,8 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const inputDir = path.join(__dirname, 'public/img');
-const outputDir = path.join(__dirname, 'public/img/optimized');
 const profileInputDir = path.join(__dirname, 'public/img/profiles');
 const profileOutputDir = path.join(__dirname, 'public/img/optimized/profiles');
 
@@ -36,5 +34,4 @@ const optimizeImages = (inputDir, outputDir) => {
     });
 };
 
-optimizeImages(inputDir, outputDir);
 optimizeImages(profileInputDir, profileOutputDir);
