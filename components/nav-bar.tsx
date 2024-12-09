@@ -37,7 +37,7 @@ const NavBar = () => {
                 <Link href={'/'} onClick={() => setIsOpen(false)}>Home</Link>
                 <Link href={'/about'} onClick={() => setIsOpen(false)}>About</Link>
                 <Link href={'/team'} onClick={() => setIsOpen(false)}>Our Team</Link>
-                <Link href={'/conact'} onClick={() => setIsOpen(false)}>Contact Us</Link>
+                <Link href={'/contact'} onClick={() => setIsOpen(false)}>Contact Us</Link>
                 <Link href={'https://www.change.org/p/stop-google-from-limiting-custom-roms'}  onClick={() => setIsOpen(false)} className={buttonVariants({ variant: "outline" })}>Sign the Petition</Link>
             </nav>
         </SheetContent>
