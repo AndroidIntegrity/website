@@ -23,7 +23,7 @@ export default function Home() {
           Sign the Petition
         </Link>
       </section>
-      <section className="flex flex-row items-center pt-32 px-4 md:px-8 lg:px-16">
+      <section className="flex flex-col md:flex-row items-center pt-32 px-4 md:px-8 lg:px-16">
         <div className="w-full flex flex-1 mb-6 items-center justify-center">
           <Image
             src={"/android.svg"}
@@ -50,7 +50,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="flex flex-row items-center pt-32 px-4 md:px-8 lg:px-16">
+      <section className="flex flex-col md:flex-row items-center pt-32 px-4 md:px-8 lg:px-16">
         <div className="w-full flex flex-1 flex-col">
           <h2 className="text-4xl font-bold pb-6">Who we are</h2>
           <p className="text-lg pb-8">
@@ -66,7 +66,7 @@ export default function Home() {
             About our Team
           </Link>
         </div>
-        <div className="w-full flex flex-1 mb-3 items-center justify-center">
+        <div className="w-full flex pt-10 md:pt-0 flex-1 mb-3 items-center justify-center">
           <Image
             src={"/team.svg"}
             alt="An illustration of people working together"
