@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
+import Transition from "@/app/template";
 
 const inter = Inter({ weight: "variable", variable: "--font-inter" });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased`}>
         <NavBar />
-        {children}
+        <Transition>{children}</Transition>
         <Footer />
       </body>
     </html>

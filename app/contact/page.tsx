@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SiBluesky, SiGmail, SiDiscord, SiTelegram, SiTiktok } from "@icons-pack/react-simple-icons";
@@ -6,7 +5,7 @@ import type { IconType } from "@icons-pack/react-simple-icons";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Contact | Android Integrity Alliance",
+  title: "Contact Us | Android Integrity Alliance",
 }
 
 type ContactMethod = {
