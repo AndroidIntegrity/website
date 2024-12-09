@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 
 export default function About() {
     return (
-        <main className="py-3 px-5 flex flex-col lg:flex-row">
-            <section className="flex flex-col items-center lg:items-start justify-center pt-8 pb-3 flex-1">
-                <h1 className="text-4xl font-bold mb-4 text-center lg:text-start">About Us</h1>
-                <p className="text-lg md:text-lg lg:text-base text-center lg:text-start">We are the Android Integrity Alliance, a group of passionate individuals aiming to promote a fair and open Android operating system. Our mission is to support all types of users and ensure that everyone can enjoy the full potential of their device.</p>
+        <main className="px-5 py-3 w-screen">
+            <section className="flex flex-col items-center justify-center space-y-4 pt-8 sm:pt-16 pb-3">
+                <h1 className="text-4xl font-bold mb-4 self-center text-center lg:text-start">About Us</h1>
+                <p className="text-lg md:text-lg lg:text-base text-center md:w-1/2">We are the Android Integrity Alliance, a group of passionate individuals aiming to promote a fair and open Android operating system. Our mission is to support all types of users and ensure that everyone can enjoy the full potential of their device.</p>
             </section>
-            <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 px-4 sm:px-8 flex-1">
+            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pt-8 px-4 sm:px-8">
             <Card>
                 <CardHeader>
                     <CardTitle>Our Team</CardTitle>
