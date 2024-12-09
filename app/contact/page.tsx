@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SiBluesky, SiGmail, SiDiscord, SiTelegram, SiTiktok } from "@icons-pack/react-simple-icons";
+import type { IconType } from "@icons-pack/react-simple-icons";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Contact | Android Integrity Alliance",
@@ -8,7 +11,7 @@ export const metadata: Metadata = {
 
 type ContactMethod = {
   name: string;
-  icon: string;
+  icon: IconType;
   displayUrl: string;
   link: string;
 };
@@ -16,43 +19,43 @@ type ContactMethod = {
 const contactMethods: ContactMethod[] = [
   {
     name: "Bluesky",
-    icon: "/bluesky.svg",
+    icon: SiBluesky,
     displayUrl: "@androidintegrity.bsky.social",
     link: "https://androidintegrity.bsky.social",
   },
   {
     name: "Email",
-    icon: "/gmail.svg",
+    icon: SiGmail,
     displayUrl: "admin@androidintegrity.org",
     link: "mailto:admin@androidintegrity.org",
   },
   {
     name: "Press Email",
-    icon: "/gmail.svg",
+    icon: SiGmail,
     displayUrl: "press@androidintegrity.org",
     link: "mailto:press@androidintegrity.org",
   },
   {
     name: "Discord",
-    icon: "/discord.svg",
+    icon: SiDiscord,
     displayUrl: "discord.gg/androidintegrity",
     link: "https://discord.gg/androidintegrity",
   },
   {
     name: "Telegram Group",
-    icon: "/telegram.svg",
+    icon: SiTelegram,
     displayUrl: "@AndIntAllianceChat",
     link: "https://t.me/AndIntAllianceChat",
   },
   {
     name: "Telegram Channel",
-    icon: "/telegram.svg",
+    icon: SiTelegram,
     displayUrl: "@AndIntAlliance",
     link: "https://t.me/AndIntAlliance",
   },
   {
     name: "Tiktok",
-    icon: "/tiktok.svg",
+    icon: SiTiktok,
     displayUrl: "@android.integrity",
     link: "https://tiktok.com/@android.integrity",
   },
@@ -68,13 +71,7 @@ export default function Contact() {
             <div
               key={contactMethod.link}
               className="flex flex-col items-center"
-            >
-              <Image
-                src={contactMethod.icon}
-                width={32}
-                height={32}
-                alt={contactMethod.name}
-              />
+            >{React.createElement(contactMethod.icon, { size: "32" ,className: "mb-4 fill-blue-500" })}
               <h2 className="text-xl font-semibold">{contactMethod.name}</h2>
               <Link href={contactMethod.link} className="underline text-muted-foreground" target="_blank">{contactMethod.displayUrl}</Link>
             </div>
