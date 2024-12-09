@@ -71,7 +71,7 @@ export default function Contact() {
                 alt={contactMethod.name}
                 className=""
               />
-              <h2 className="text-xl font-semibold">Bluesky</h2>
+              <h2 className="text-xl font-semibold">{contactMethod.name}</h2>
               <Link href={contactMethod.link} className="underline text-blue-500" target="_blank">{contactMethod.displayUrl}</Link>
             </div>
           ))}
