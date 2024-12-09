@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Button, buttonVariants } from "./ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
 
 interface NavLinksProps extends React.HTMLAttributes<HTMLUListElement> {
   onNavigate?: () => void;
@@ -39,6 +40,7 @@ const NavBar = () => {
                 <Link href={'/team'} onClick={() => setIsOpen(false)}>Our Team</Link>
                 <Link href={'/contact'} onClick={() => setIsOpen(false)}>Contact Us</Link>
                 <Link href={'https://www.change.org/p/stop-google-from-limiting-custom-roms'}  onClick={() => setIsOpen(false)} className={buttonVariants({ variant: "outline" })}>Sign the Petition</Link>
+                <ModeToggle />
             </nav>
         </SheetContent>
       </Sheet>
@@ -75,6 +77,9 @@ const NavBar = () => {
             >
               Sign the Petition
             </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <ModeToggle />
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

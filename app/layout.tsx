@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
 import Transition from "@/app/template";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ weight: "variable", variable: "--font-inter" });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased`}>
-        <NavBar />
-        <Transition>{children}</Transition>
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NavBar />
+          <Transition>{children}</Transition>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
