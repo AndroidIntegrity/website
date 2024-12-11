@@ -1,12 +1,18 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { SiBluesky, SiGmail, SiDiscord, SiTelegram, SiTiktok } from "@icons-pack/react-simple-icons";
+import {
+  SiBluesky,
+  SiGmail,
+  SiDiscord,
+  SiTelegram,
+  SiTiktok,
+} from "@icons-pack/react-simple-icons";
 import type { IconType } from "@icons-pack/react-simple-icons";
 import React from "react";
 
 export const metadata: Metadata = {
   title: "Contact Us | Android Integrity Alliance",
-}
+};
 
 type ContactMethod = {
   name: string;
@@ -70,9 +76,19 @@ export default function Contact() {
             <div
               key={contactMethod.link}
               className="flex flex-col items-center"
-            >{React.createElement(contactMethod.icon, { size: "32" ,className: "mb-4 fill-blue-500" })}
+            >
+              {React.createElement(contactMethod.icon, {
+                size: "32",
+                className: "mb-4 fill-blue-500",
+              })}
               <h2 className="text-xl font-semibold">{contactMethod.name}</h2>
-              <Link href={contactMethod.link} className="underline text-muted-foreground" target="_blank">{contactMethod.displayUrl}</Link>
+              <Link
+                href={contactMethod.link}
+                className="underline text-muted-foreground"
+                target="_blank"
+              >
+                {contactMethod.displayUrl}
+              </Link>
             </div>
           ))}
         </div>
