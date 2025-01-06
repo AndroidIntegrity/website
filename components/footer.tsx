@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="mt-8 py-4 px-2 sm:px-4 md:px-8 lg:px-16 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+    <footer className="mt-8 py-4 px-2 sm:px-4 md:px-8 lg:px-16 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 fixed bottom-0 w-full bg-gray-800 text-white p-4">
       <div className="text-left">
         <p>Code open source on Github</p>
         <p className="text-sm">Licensed under GPL-2.0</p>
