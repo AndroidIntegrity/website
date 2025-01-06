@@ -6,7 +6,11 @@ import Footer from "@/components/footer";
 import Transition from "@/app/template";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ weight: "variable", variable: "--font-inter" });
+const inter = Inter({ 
+  weight: "variable", 
+  variable: "--font-inter",
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "Android Integriy Alliance",

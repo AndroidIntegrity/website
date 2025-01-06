@@ -1,15 +1,15 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuestion, faPen } from "@fortawesome/free-solid-svg-icons";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
     <main className="px-5 py-3">
       <section className="flex flex-col items-center justify-center space-y-4 pt-8 sm:pt-16 pb-3 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-          We're the Android Integrity Alliance
+          We&apos;re the Android Integrity Alliance
         </h2>
         <p className="text-lg md:text-xl lg:text-base text-center">
           We are fighting for a fair and open Android operating system,
@@ -56,7 +56,7 @@ export default function Home() {
           <p className="text-lg pb-8">
             We are a small collective of people passionate about customizing our
             Android devices and using them to their full extent. We have all
-            been affected by Google's monopolistic practices, especially in
+            been affected by Google&apos;s monopolistic practices, especially in
             regards to Play Integrity.
           </p>
           <Link

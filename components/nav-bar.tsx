@@ -20,10 +20,6 @@ import {
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 
-interface NavLinksProps extends React.HTMLAttributes<HTMLUListElement> {
-  onNavigate?: () => void;
-}
-
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
