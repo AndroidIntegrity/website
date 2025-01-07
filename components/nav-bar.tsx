@@ -67,6 +67,13 @@ const NavBar = () => {
       </Link>
       <NavigationMenu className="hidden md:block">
         <NavigationMenuList className="space-x-2">
+        <NavigationMenuItem>
+            <Link href={"/"} legacyBehavior passHref>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
+                Home
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href={"/about"} legacyBehavior passHref>
               <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
