@@ -15,7 +15,7 @@ const team: TeamMember[] = [
   {
     name: "Alessandro Murru",
     role: "Founder",
-    username: "Alphexoed",
+    username: "",
   },
   {
     name: "Aidan Honor",
